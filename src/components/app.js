@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import axios from 'axios';
 import WeatherList from './weatherlist';
 import SearchBar from './searchbar';
 import CurrentCity from './currentcity';
