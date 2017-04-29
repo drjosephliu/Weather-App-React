@@ -7,7 +7,7 @@ export const TOGGLE_CELSIUS = 'TOGGLE_CELSIUS';
 export const HAS_ERRORED = 'HAS_ERRORED';
 
 const API_KEY = '95108d63b7f0cf597d80c6d17c8010e0';
-const ROOT_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}`;
+const ROOT_URL = `https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}`;
 
 export function fetchCities(city) {
   const url = `${ROOT_URL}&q=${city}`;
