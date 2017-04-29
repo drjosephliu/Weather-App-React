@@ -37,7 +37,7 @@ export function hasErrored(bool) {
 
 
 export function fetchCurrentCity() {
-  const url = 'http://freegeoip.net/json/';
+  const url = 'https://freegeoip.net/json/';
 
   const requestGeoIp = axios.get(url);
 
