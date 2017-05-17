@@ -34,17 +34,22 @@ class App extends Component {
 
   render() {
     return (
-      <div className={this.props.cities == false ? 'search': 'search-up'}>
-        <h1>What's the weather today?</h1>
-        <div className='container-box'>
-          <CurrentCity
-            weatherIcon={this.renderWeatherIcon} />
-          <ToggleCelsius />
+      <div>
+        <div className={this.props.cities == false ? 'search': 'search-up'}>
+          <h1>What's the weather today?</h1>
+          <div className='footer'>
+            <p>(Source code on <a href='https://github.com/drhectapus/Weather-App-React-' target='_blank'>Github</a>)</p>
+          </div>
+          <div className='container-box'>
+            <CurrentCity
+              weatherIcon={this.renderWeatherIcon} />
+            <ToggleCelsius />
+          </div>
+          <SearchBar />
+          {this.props.cities == false ? null :
+            <WeatherList
+              weatherIcon={this.renderWeatherIcon} />}
         </div>
-        <SearchBar />
-        {this.props.cities == false ? null :
-          <WeatherList
-            weatherIcon={this.renderWeatherIcon} />}
       </div>
     )
   }
