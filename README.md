@@ -1,25 +1,11 @@
-# ReduxSimpleStarter
+# Show the Local Weather
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+Front-end project from FreeCodeCamp
 
-### Getting Started
+#### User stories:
 
-There are two methods for getting started with this repo.
+1. I can see the weather in my current location.
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+2. I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.
 
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
+3. I can push a button to toggle between Fahrenheit and Celsius
